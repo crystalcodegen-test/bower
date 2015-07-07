@@ -20,18 +20,12 @@ imports:
   readme: readme.md.Generator
 exports:
   Generator:
-    filename: bower.json
-    schema: config-schema
+    filename: .bowerrc
+    schema: config.yml
     transformer: json-trans
     type: generator
   Schematic:
-    alias: config-schema
-    schema:
-      type: object
-      additionalProperties: false
-      properties:
-        name:
-          type: text
+    schema: config.yml
     type: schematic
 outputs:
   - generator: authors

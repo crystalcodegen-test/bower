@@ -1,0 +1,55 @@
+type: object
+additionalProperties: false
+properties:
+  analytics:
+    type: boolean
+  cwd:
+    type: string
+  directory:
+    type: string
+  registry:
+    type:
+      - string
+      - object
+    properties:
+      search:
+        type:
+          - string
+          - array
+        items:
+          type: string
+      register:
+        type: string
+      publish:
+        type: string
+  shorthand-resolver:
+    type: string
+  proxy:
+    type: string
+  https-proxy:
+    type: string
+  user-agent:
+    type: string
+  timeout:
+    type: number
+  strict-ssl:
+    type: boolean
+  ca:
+    type: string
+  color:
+    type: boolean
+  storage:
+    type: object
+    properties:
+      packages:
+        type: string
+      registry:
+        type: string
+      links:
+        type: string
+      completion:
+        type: string
+  tmp:
+    type: string
+  interactive:
+    type: boolean
