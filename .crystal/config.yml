@@ -1,23 +1,20 @@
-id: bower.config
 name: Bower
-version: 0.1.0
 description: the official [bower](http://bower.io) module for [crystal](https://crystal.sh)
-repository: https://github.com/crystal/bower-config
 author:
   name: Chris Tate
   email: chris@crystal.sh
   url: https://crystal.sh
 copyright: 2015 Crystal
 modules:
-  authors.file: v0.1.0
-  json.stringify: v0.1.0
-  license.mit: v0.1.0
-  readme.md: v0.1.0
+  crystal/authors-file: v0.1.0
+  crystal/json-stringify: v0.1.0
+  crystal/license-mit: v0.1.0
+  crystal/readme-md: v0.1.0
 imports:
-  authors: authors.file.Generator
-  json-trans: json.stringify.Transformer
-  license: license.mit.Generator
-  readme: readme.md.Generator
+  authors: crystal/authors-file.Generator
+  json-trans: crystal/json-stringify.Transformer
+  license: crystal/license-mit.Generator
+  readme: crystal/readme-md.Generator
 exports:
   Generator:
     filename: .bowerrc
