@@ -6,33 +6,28 @@ author:
   url: https://crystal.sh
 copyright: 2015 Crystal
 modules:
-  crystal/authors-file: v0.1.0
-  crystal/json-stringify: v0.1.0
-  crystal/license-mit: v0.1.0
-  crystal/readme-md: v0.1.0
-imports:
-  authors: crystal/authors-file.Generator
-  json-trans: crystal/json-stringify.Transformer
-  license: crystal/license-mit.Generator
-  readme: crystal/readme-md.Generator
+  crystal/authors-file: ~0.1.0
+  crystal/json-stringify: ~0.1.0
+  crystal/license-mit: ~0.1.0
+  crystal/readme-md: ~0.1.0
 exports:
   Generator:
     filename: .bowerrc
     schema: config.yml
-    transformer: json-trans
+    transformer: json-stringify.Transformer
     type: generator
   Schematic:
     schema: config.yml
     type: schematic
 outputs:
-  - generator: authors
+  - generator: authors-file.Generator
     spec:
       author: $author
       name: $name
-  - generator: license
+  - generator: license-mit.Generator
     spec:
       copyright: $copyright
-  - generator: readme
+  - generator: readme-md.Generator
     spec:
       name: $name
       version: $version
