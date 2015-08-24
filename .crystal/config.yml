@@ -22,7 +22,7 @@ exports:
   PackageGenerator:
     engine: crystal/json/StringifyEngine
     filename: bower.json
-    schema: config.yml
+    schema: package.yml
     type: generator
   PackageSchematic:
     schema: package.yml
