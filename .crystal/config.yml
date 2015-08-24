@@ -12,17 +12,17 @@ modules:
   crystal/readme: ~0.1.0
 exports:
   ConfigGenerator:
+    engine: crystal/json/StringifyEngine
     filename: .bowerrc
     schema: config.yml
-    transformer: crystal/json/StringifyTransformer
     type: generator
   ConfigSchematic:
     schema: config.yml
     type: schematic
   PackageGenerator:
+    engine: crystal/json/StringifyEngine
     filename: bower.json
     schema: config.yml
-    transformer: crystal/json/StringifyTransformer
     type: generator
   PackageSchematic:
     schema: config.yml
