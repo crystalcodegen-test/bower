@@ -14,7 +14,7 @@ exports:
   ConfigGenerator:
     filename: .bowerrc
     schema: config.yml
-    transformer: crystal/json/stringify-transformer
+    transformer: crystal/json/StringifyTransformer
     type: generator
   ConfigSchematic:
     schema: config.yml
@@ -22,7 +22,7 @@ exports:
   PackageGenerator:
     filename: bower.json
     schema: config.yml
-    transformer: crystal/json/stringify-transformer
+    transformer: crystal/json/StringifyTransformer
     type: generator
   PackageSchematic:
     schema: config.yml
