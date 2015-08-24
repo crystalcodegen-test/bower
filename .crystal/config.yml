@@ -25,7 +25,7 @@ exports:
     schema: config.yml
     type: generator
   PackageSchematic:
-    schema: config.yml
+    schema: package.yml
     type: schematic
 outputs:
   - generator: crystal/authors/generator
