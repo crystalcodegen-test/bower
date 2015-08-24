@@ -1,0 +1,67 @@
+type: object
+additionalProperties: false
+properties:
+  name:
+    maxLength: 50
+    required: true
+    type: string
+  description:
+    maxLength: 140
+    type: string
+  version:
+    type: string
+  main:
+    type:
+      - string
+      - array
+    items:
+      type: string
+  moduleType:
+    type:
+      - string
+      - array
+    items:
+      type: string
+  license:
+    type:
+      - string
+      - array
+    items:
+      type: string
+  ignore:
+    type: array
+    items:
+      type: string
+  keywords:
+    type: array
+    items:
+      type: string
+  authors:
+    type: array
+    items:
+      type:
+        - object
+        - string
+      properties:
+        email:
+          type: string
+        homepage:
+          type: string
+        name:
+          type: string
+  homepage:
+    type: string
+  dependencies:
+    type: object
+    properties:
+      type: string
+  devDependencies:
+    type: object
+    properties:
+      type: string
+  resolutions:
+    type: object
+    properties:
+      type: string
+  private:
+    type: boolean

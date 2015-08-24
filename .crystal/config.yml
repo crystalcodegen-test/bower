@@ -1,34 +1,43 @@
 name: Bower
-description: the official [bower](http://bower.io) module for [crystal](https://crystal.sh)
+description: official [Bower](http://bower.io) module of [Crystal](https://crystal.sh)
 author:
   name: Chris Tate
   email: chris@crystal.sh
   url: https://crystal.sh
 copyright: 2015 Crystal
 modules:
-  crystal/authors-file: ~0.1.0
-  crystal/json-stringify: ~0.1.0
-  crystal/license-mit: ~0.1.0
-  crystal/readme-md: ~0.1.0
+  crystal/authors: ~0.1.0
+  crystal/json: ~0.1.0
+  crystal/license: ~0.1.0
+  crystal/readme: ~0.1.0
 exports:
-  Generator:
+  config-generator:
     filename: .bowerrc
     schema: config.yml
-    transformer: json-stringify.Transformer
+    transformer: crystal/json/stringify-transformer
     type: generator
-  Schematic:
+  config-schematic:
+    schema: config.yml
+    type: schematic
+  package-generator:
+    filename: bower.json
+    schema: config.yml
+    transformer: crystal/json/stringify-transformer
+    type: generator
+  package-schematic:
     schema: config.yml
     type: schematic
 outputs:
-  - generator: authors-file.Generator
+  - generator: crystal/authors/generator
     spec:
       author: $author
       name: $name
-  - generator: license-mit.Generator
+      
+  - generator: crystal/license/mit-generator
     spec:
       copyright: $copyright
-  - generator: readme-md.Generator
+      
+  - generator: crystal/readme/generator
     spec:
       name: $name
-      version: $version
       description: $description

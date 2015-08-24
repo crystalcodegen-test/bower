@@ -1,3 +1,3 @@
-# Bower 0.1.0
+# Bower 
 
-the official [bower](http://bower.io) module for [crystal](https://crystal.sh)
+official [Bower](http://bower.io) module of [Crystal](https://crystal.sh)
