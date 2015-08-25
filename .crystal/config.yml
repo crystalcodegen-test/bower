@@ -12,7 +12,7 @@ modules:
   crystal/readme: ~0.2.1
 exports:
   ConfigGenerator:
-    engine: crystal/json/StringifyEngine
+    engine: json.StringifyEngine
     filename: .bowerrc
     schema: config.yml
     type: generator
@@ -20,7 +20,7 @@ exports:
     schema: config.yml
     type: schematic
   PackageGenerator:
-    engine: crystal/json/StringifyEngine
+    engine: json.StringifyEngine
     filename: bower.json
     schema: package.yml
     type: generator
@@ -28,16 +28,16 @@ exports:
     schema: package.yml
     type: schematic
 outputs:
-  - generator: crystal/authors/generator
+  - generator: authors.AuthorsGenerator
     spec:
       author: $author
       name: $name
       
-  - generator: crystal/license/mit-generator
+  - generator: license.MITGenerator
     spec:
       copyright: $copyright
       
-  - generator: crystal/readme/generator
+  - generator: readme.ReadmeGenerator
     spec:
       name: $name
       description: $description
