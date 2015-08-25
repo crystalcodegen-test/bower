@@ -6,10 +6,10 @@ author:
   url: https://crystal.sh
 copyright: 2015 Crystal
 modules:
-  crystal/authors: ~0.1.0
-  crystal/json: ~0.1.0
-  crystal/license: ~0.1.0
-  crystal/readme: ~0.1.0
+  crystal/authors: ~0.2.3
+  crystal/json: ~0.3.1
+  crystal/license: ~0.2.3
+  crystal/readme: ~0.2.1
 exports:
   ConfigGenerator:
     engine: crystal/json/StringifyEngine
