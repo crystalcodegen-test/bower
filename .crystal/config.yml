@@ -9,7 +9,7 @@ modules:
   crystal/authors: ~0.2.3
   crystal/json: ~0.3.1
   crystal/license: ~0.2.3
-  crystal/readme: ~0.2.1
+  crystal/readme: ~0.3.0
 exports:
   ConfigGenerator:
     engine: json.StringifyEngine
@@ -38,6 +38,4 @@ outputs:
       copyright: $copyright
       
   - generator: readme.ReadmeGenerator
-    spec:
-      name: $name
-      description: $description
+    spec: readme.yml
