@@ -7,24 +7,30 @@ author:
 copyright: 2015 Crystal
 modules:
   crystal/authors: ~0.2.3
+  crystal/crystal-readme: ~0.1.5
   crystal/json: ~0.3.1
   crystal/license: ~0.2.3
-  crystal/readme: ~0.3.0
 exports:
   ConfigGenerator:
+    description: Generates a `.bowerrc` file.
     engine: json.StringifyEngine
+    example: config-generator
     filename: .bowerrc
     schema: config.yml
     type: generator
   ConfigSchematic:
+    description: Schema for `.bowerrc` files.
     schema: config.yml
     type: schematic
   PackageGenerator:
+    description: Generates a `bower.json` file.
     engine: json.StringifyEngine
+    example: package-generator
     filename: bower.json
     schema: package.yml
     type: generator
   PackageSchematic:
+    description: Schema for `bower.json` files.
     schema: package.yml
     type: schematic
 outputs:
@@ -37,5 +43,9 @@ outputs:
     spec:
       copyright: $copyright
       
-  - generator: readme.ReadmeGenerator
-    spec: readme.yml
+  - generator: crystal-readme.ModuleReadmeGenerator
+    spec:
+      name: $name
+      description: $description
+      exports: $exports
+      repo: crystal/bower

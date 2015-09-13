@@ -1,16 +1,7 @@
-modules:
-  crystal/bower: ../..
+imports:
+  crystal/bower: latest
 outputs:
-  - generator: crystal/bower/config-generator
-    spec:
-      directory: app/components/
-      analytics: false
-      timeout: 120000
-      registry:
-        search:
-          - http://localhost:8000
-          - https://bower.herokuapp.com
-  - generator: crystal/bower/package-generator
+  - generator: bower.PackageGenerator
     spec:
       name: blue-leaf
       version: 1.2.3

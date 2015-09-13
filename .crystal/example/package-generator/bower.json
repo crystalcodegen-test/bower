@@ -1,0 +1,37 @@
+{
+	"authors": [
+		"Betty Beta <bbeta@example.com>"
+	],
+	"dependencies": {
+		"get-size": "~1.2.2",
+		"eventEmitter": "~4.2.11"
+	},
+	"description": "Physics-like animations for pretty particles",
+	"devDependencies": {
+		"qunit": "~1.16.0"
+	},
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"keywords": [
+		"motion",
+		"physics",
+		"particles"
+	],
+	"license": "MIT",
+	"main": [
+		"js/motion.js",
+		"sass/motion.scss"
+	],
+	"moduleType": [
+		"amd",
+		"globals",
+		"node"
+	],
+	"name": "blue-leaf",
+	"version": "1.2.3"
+}
