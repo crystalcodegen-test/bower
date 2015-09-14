@@ -5,7 +5,7 @@ author:
   email: chris@crystal.sh
   url: https://crystal.sh
 copyright: 2015 Crystal
-modules:
+imports:
   crystal/authors: ~0.2.3
   crystal/crystal-readme: ~0.1.5
   crystal/json: ~0.3.1
