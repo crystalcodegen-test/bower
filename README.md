@@ -1,32 +1,32 @@
 # Bower
 
-[![Bower](https://cdn.rawgit.com/crystal/bower/master/.crystal/icon.svg)](https://hub.crystal.sh/crystal/bower)
+[![Bower](https://cdn.rawgit.com/crystal/bower/master/.autocode/icon.svg)](https://hub.crystal.sh/crystal/bower)
 
-official [Bower](http://bower.io) module of [Crystal](https://crystal.sh)
+generator / schema of `bower.json` and `.bowerrc` for [Bower](http://bower.io)
 
 ## Install
 
-First install [Crystal](https://crystal.sh):
+First install [Autocode](https://crystal.sh):
       
 ```sh
 # Choose one:
-npm install crystal-cli -g
-brew install crystal # mac users
-git clone https://github.com/crystal/crystal-cli
+npm install autocode-cli -g
+brew install autocode # mac users
+git clone https://github.com/crystal/autocode-cli
 ```
 
-Then use Crystal to install [crystal/bower](https://hub.crystal.sh/crystal/bower):
+Then use Autocode to install [crystal/bower](https://hub.crystal.sh/crystal/bower):
 
 ```sh
-crystal install crystal/bower
+autocode install crystal/bower
 ```
 
 ## Exports
 
-- [ConfigGenerator](#module-ConfigGenerator)
-- [ConfigSchematic](#module-ConfigSchematic)
-- [PackageGenerator](#module-PackageGenerator)
-- [PackageSchematic](#module-PackageSchematic)
+- [ConfigGenerator](#module-ConfigGenerator) - Generates a `.bowerrc` file.
+- [ConfigSchematic](#module-ConfigSchematic) - Schema for `.bowerrc` files.
+- [PackageGenerator](#module-PackageGenerator) - Generates a `bower.json` file.
+- [PackageSchematic](#module-PackageSchematic) - Schema for `bower.json` files.
 
 
 ### <a name="module-ConfigGenerator"></a> ConfigGenerator
@@ -36,7 +36,7 @@ Generates a `.bowerrc` file.
 
 #### Example Input
 
-##### .crystal/config.yml
+##### .autocode/config.yml
 
 ```yaml
 imports:
@@ -148,7 +148,7 @@ Generates a `bower.json` file.
 
 #### Example Input
 
-##### .crystal/config.yml
+##### .autocode/config.yml
 
 ```yaml
 imports:
@@ -317,6 +317,6 @@ properties:
 - [crystal/bower on Crystal Hub](https://hub.crystal.sh/crystal/bower)
 - [Report Issues](https://github.com/crystal/bower/issues)
 - [Crystal Website](https://crystal.sh)
-- [Gitter](https://gitter.im/crystal/crystal)
+- [Gitter](https://gitter.im/crystal/autocode)
 - [Twitter](https://twitter.com/crystalcodegen)
 - [Facebook](https://facebook.com/crystalcodegen)

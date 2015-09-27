@@ -1,5 +1,5 @@
 name: Bower
-description: official [Bower](http://bower.io) module of [Crystal](https://crystal.sh)
+description: generator / schema of `bower.json` and `.bowerrc` for [Bower](http://bower.io)
 author:
   name: Chris Tate
   email: chris@crystal.sh
