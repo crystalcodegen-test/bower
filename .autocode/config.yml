@@ -11,6 +11,7 @@ imports:
   crystal/json: ~0.4.0
   crystal/license: ~0.3.1
   crystal/npm: ~0.3.1
+  crystal/cocoapods: ~0.2.0
 exports:
   ConfigGenerator:
     description: Generates a `.bowerrc` file.
