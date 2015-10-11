@@ -1,15 +1,16 @@
 name: Bower
-description: generator / schema of `bower.json` and `.bowerrc` for [Bower](http://bower.io)
+description: 'generator / schema of `bower.json` and `.bowerrc` for [Bower](http://bower.io)'
 author:
   name: Chris Tate
   email: chris@crystal.sh
-  url: https://crystal.sh
+  url: 'https://crystal.sh'
 copyright: 2015 Crystal
 imports:
   crystal/authors: ~0.3.3
   crystal/crystal-readme: ~0.2.0
   crystal/json: ~0.4.0
   crystal/license: ~0.3.1
+  crystal/npm: ~0.3.1
 exports:
   ConfigGenerator:
     description: Generates a `.bowerrc` file.
@@ -38,14 +39,13 @@ outputs:
     spec:
       author: $author
       name: $name
-      
   - generator: license.MITGenerator
     spec:
       copyright: $copyright
-      
   - generator: crystal-readme.ModuleReadmeGenerator
     spec:
       name: $name
       description: $description
       exports: $exports
       repo: crystal/bower
+  - generator: npm.PackageGenerator
