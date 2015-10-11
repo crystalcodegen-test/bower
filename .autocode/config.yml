@@ -1,4 +1,4 @@
-name: Bower
+name: 'Bower!'
 description: 'generator / schema of `bower.json` and `.bowerrc` for [Bower](http://bower.io)'
 author:
   name: Chris Tate
