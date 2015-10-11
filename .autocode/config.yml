@@ -50,4 +50,5 @@ outputs:
       exports: $exports
       repo: crystal/bower
   - generator: npm.PackageGenerator
+  - generator: jshint.ConfigGenerator
 url: 'http://bower.io'
