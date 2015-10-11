@@ -49,3 +49,4 @@ outputs:
       exports: $exports
       repo: crystal/bower
   - generator: npm.PackageGenerator
+url: 'http://bower.io'
