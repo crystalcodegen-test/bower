@@ -1,6 +1,9 @@
 name: Bower
 version: 0.1.0
 description: 'generator / schema of `bower.json` and `.bowerrc` for [Bower](http://bower.io)'
+keywords:
+  - bower
+  - package manager
 author:
   name: Chris Tate
   email: chris@crystal.sh
@@ -60,6 +63,9 @@ outputs:
       description: $description
   - generator: jshint.ConfigGenerator
   - generator: bower.PackageGenerator
+    spec:
+      description: $description
+      keywords: $keywords
   - generator: bower.ConfigGenerator
-  - generator: docker.DockerfileGenerator
+  - generator: vagrant.VagrantfileGenerator
 url: 'http://bower.io'
