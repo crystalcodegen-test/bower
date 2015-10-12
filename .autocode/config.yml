@@ -14,6 +14,7 @@ imports:
   crystal/jshint: latest
   crystal/bower: latest
   crystal/docker: latest
+  crystal/vagrant: latest
 exports:
   ConfigGenerator:
     description: Generates a `.bowerrc` file.
@@ -55,4 +56,5 @@ outputs:
   - generator: jshint.ConfigGenerator
   - generator: bower.PackageGenerator
   - generator: bower.ConfigGenerator
+  - generator: docker.DockerfileGenerator
 url: 'http://bower.io'
