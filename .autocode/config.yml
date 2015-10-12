@@ -68,6 +68,7 @@ outputs:
       description: $description
       keywords: $keywords
       license: $license
+      name: $name
   - generator: bower.ConfigGenerator
     spec:
       user-agent: Safari
