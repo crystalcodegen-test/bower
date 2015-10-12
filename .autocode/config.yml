@@ -1,4 +1,5 @@
 name: Bower
+version: 0.1.0
 description: 'generator / schema of `bower.json` and `.bowerrc` for [Bower](http://bower.io)'
 author:
   name: Chris Tate
@@ -53,6 +54,10 @@ outputs:
       exports: $exports
       repo: crystal/bower
   - generator: npm.PackageGenerator
+    spec:
+      version: $version
+      name: $name
+      description: $description
   - generator: jshint.ConfigGenerator
   - generator: bower.PackageGenerator
   - generator: bower.ConfigGenerator
