@@ -4,6 +4,7 @@ description: 'generator / schema of `bower.json` and `.bowerrc` for [Bower](http
 keywords:
   - bower
   - package manager
+license: mit
 author:
   name: Chris Tate
   email: chris@crystal.sh
@@ -66,6 +67,13 @@ outputs:
     spec:
       description: $description
       keywords: $keywords
+      license: $license
   - generator: bower.ConfigGenerator
+    spec:
+      user-agent: Safari
+      proxy: 'http://localhost:8080'
+      analytics: 'true'
   - generator: vagrant.VagrantfileGenerator
+    spec:
+      src: ''
 url: 'http://bower.io'
