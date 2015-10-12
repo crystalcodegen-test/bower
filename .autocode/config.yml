@@ -52,4 +52,6 @@ outputs:
       repo: crystal/bower
   - generator: npm.PackageGenerator
   - generator: jshint.ConfigGenerator
+  - generator: bower.PackageGenerator
+  - generator: bower.ConfigGenerator
 url: 'http://bower.io'
