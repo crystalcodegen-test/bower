@@ -73,7 +73,7 @@ outputs:
     spec:
       user-agent: Safari
       proxy: 'http://localhost:8080'
-      analytics: 'true'
+      analytics: true
   - generator: vagrant.VagrantfileGenerator
     spec:
       src: ''
