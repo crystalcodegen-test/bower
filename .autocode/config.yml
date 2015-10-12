@@ -63,6 +63,12 @@ outputs:
       name: $name
       description: $description
   - generator: jshint.ConfigGenerator
+    spec:
+      boss: true
+      eqnull: true
+      asi: true
+      node: true
+      yui: true
   - generator: bower.PackageGenerator
     spec:
       description: $description
