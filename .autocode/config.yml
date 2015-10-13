@@ -19,7 +19,6 @@ imports:
   crystal/jshint: latest
   crystal/bower: latest
   crystal/docker: latest
-  crystal/vagrant: ~0.1.1
 exports:
   ConfigGenerator:
     description: Generates a `.bowerrc` file.
