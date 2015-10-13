@@ -78,10 +78,13 @@ outputs:
       name: $name
   - generator: bower.ConfigGenerator
     spec:
-      user-agent: Safari
-      proxy: 'http://localhost:8080'
-      analytics: true
-      color: true
+      directory: app/components/
+      analytics: false
+      timeout: 120000
+      registry:
+        search:
+          - 'http://localhost:8000'
+          - 'https://bower.herokuapp.com'
   - generator: vagrant.VagrantfileGenerator
     spec:
       src: ''
