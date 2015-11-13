@@ -30,7 +30,7 @@ exports:
   ConfigSchematic:
     description: Schema for `.bowerrc` files.
     schema: config.yml
-    type: schematic
+    type: schema
   PackageGenerator:
     description: Generates a `bower.json` file.
     engine: json.StringifyEngine
